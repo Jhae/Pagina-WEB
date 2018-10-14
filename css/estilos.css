@@ -38,6 +38,11 @@ body{
     margin-left: auto;
     cursor: pointer;
     
+    position: fixed;
+    top:0px;
+    right: 0px;
+    z-index: 10;
+    
 }
 /* --------------------estilos del menu--------------------*/
 .nav{
@@ -46,6 +51,12 @@ body{
     left: -100%;
     width: 100%;
     transition: all 0.4s;
+    
+    position: fixed;
+    top:60px;
+    right: 0px;
+    z-index: 9;
+    transform: translate(0px);
 }
 .menu{
     list-style: none;
