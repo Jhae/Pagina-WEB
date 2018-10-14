@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+body{
+    margin: 0;
+}
+
+.section__titulo{
+    text-align: center;
+    font-size: 40px;
+    color: #FBA919;
+}
+
+/*----------------  Estilos del Header  ----------------*/
+.header{
+    height: 60px;
+}
+.header .contenedor{
+    display: flex;
+    justify-content: space-between;
+}
+.logo, .icon-menu{
+    margin: 5px;
+    color: #fff;
+}
+.icon-menu{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: #FBA919;
+    text-align: center;
+    line-height: 40PX;
+    border-radius: 5px;
+    margin-left: auto;
+    cursor: pointer;
+    
+}
+/* --------------------estilos del menu--------------------*/
+.nav{
+    position: absolute;
+    top: 60px;
+    left: -100%;
+    width: 100%;
+    transition: all 0.4s;
+}
+.menu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.menu__link{
+    display: block;
+    padding: 20px;
+    background: #FBA919;
+    text-decoration: none;
+    color: #FFF;
+}
+.menu__link:hover, .select{
+    background: white;
+    color: #FBA919;
+}
+.mostrar {
+    left: 0;
+}
+
+/*----------------Esrtilos del banner---------------------------*/
+
+.banner{
+    margin-top: -60px;
+    position: relative;
+    z-index: -1000;
+}
+.banner .contenedor{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 100%;
+    color: #fff;
+    text-align: center;
+}
+.banner__txt{
+    display: none
+}
+
+/*-------------------Estilos del Info---------------------*/
+
+.info__columna{
+    background: #FBA919;
+    color: #FFF;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+
+/*-------------------Estilos de cursos---------------------*/
+.cursos__columnas{
+    position: relative;
+    margin-bottom: 30px;
+}
+.cursos__description{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    background: rgba(0,0,0,0.5);
+    width: 60%;
+    height: 100%;
+    padding: 5px;
+}
+.cursos__titulo{
+    font-size: 25px;
+    margin: 5px 0;
+    
+}
+
+/*-------------------Estilos de footer---------------------*/
+
+.footer{
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+.footer .social [class^="icon-"] {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    padding: 12px;
+    background: white;
+    border-radius: 50%;
+    line-height: 40px;
+}
